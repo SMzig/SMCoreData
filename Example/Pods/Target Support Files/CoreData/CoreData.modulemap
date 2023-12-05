@@ -1,0 +1,6 @@
+framework module CoreData {
+  umbrella header "CoreData-umbrella.h"
+
+  export *
+  module * { export * }
+}

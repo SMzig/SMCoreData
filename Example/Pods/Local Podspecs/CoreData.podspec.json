@@ -1,0 +1,22 @@
+{
+  "name": "CoreData",
+  "version": "0.1.0",
+  "summary": "A short description of CoreData.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SMzig/CoreData",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SMzig": "37684140+SMzig@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/SMzig/CoreData.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Sources/SMCoreData/**/*"
+}
