@@ -7,8 +7,8 @@
 
 import CoreData
 
-class SMDBHelper: NSObject {
-    static let shared = SMDBHelper()
+public class SMDBHelper: NSObject {
+    public static let shared = SMDBHelper()
 
     // MARK: - Core Data stack
 
