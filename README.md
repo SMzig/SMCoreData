@@ -28,22 +28,22 @@ dependencies: [
 ## Usage
 Insert data
 ```swift
-try CoreDataStorage.shared.insertInto(entity: "TableUser", parameter: ["name":"sudhir", age: 10])
+try SMDBHelper.shared.insertInto(entity: "TableUser", parameter: ["name":"sudhir", age: 10])
 ```
 
 Fetch data
 ```swift
-let arrResult = try CoreDataStorage.shared.fetch(entity: "TableUser") as? [User]
+let arrResult = try SMDBHelper.shared.fetch(entity: "TableUser") as? [User]
 ```
 
 Update data
 ```swift
 let predicate = NSPredicate(format: "name==%@", argumentArray: ["YOUR_NAME"])
 
-let arrResult = try CoreDataStorage.shared.update(entity: "TableUser", predicate: predicate, parameter: ["name":"sudhir", age: 10])
+let arrResult = try SMDBHelper.shared.update(entity: "TableUser", predicate: predicate, parameter: ["name":"sudhir", age: 10])
 ```
 
 Delete data
 ```swift
-try CoreDataStorage.shared.delete(entity: "TableUser", predicate: NSPredicate(format: "name==%@", argumentArray: ["YOUR_NAME"]))
+try SMDBHelper.shared.delete(entity: "TableUser", predicate: NSPredicate(format: "name==%@", argumentArray: ["YOUR_NAME"]))
 ```
